@@ -1,1 +1,1 @@
-# Fusion-Magnet-Mineral-Tracing
+# CoilChain-Fusion-Magnet-Tracing
