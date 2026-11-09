@@ -1,4 +1,4 @@
-# Coilchain: Fusion Magnet Mineral Tracing
+# CoilChain-Fusion-Magnet-Tracing
 
 Which laws reach the mines behind fusion superconducting magnets, and what each gap lets through.
 
