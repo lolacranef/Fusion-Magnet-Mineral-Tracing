@@ -568,6 +568,40 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .guard{font-size:13px;border-left:3px solid var(--vD);padding:2px 0 2px 10px;color:var(--ink)}
 .guard span{display:block;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--vD)}
 .cell.c-R{cursor:pointer}
+
+/* case files */
+.ctl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0}
+.ctl li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.ctl li:first-child{border-top:0}
+.ctl .cd{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding-top:3px}
+.ctl p{margin:0 0 6px;font-size:14.5px;line-height:1.5}
+@media (max-width:620px){.ctl li{grid-template-columns:minmax(0,1fr);gap:4px}}
+.ctests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:620px){.ctests{grid-template-columns:minmax(0,1fr)}}
+.verdict{background:var(--ink);color:#fff;border-radius:16px;padding:16px 18px;margin-top:6px}
+.verdict .tag{color:#d9d1e0}
+.verdict p{margin:6px 0 0;font-size:16.5px;line-height:1.45}
+.corrs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:16px}
+.cchart{margin:0;background:var(--surface);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.cchart figcaption{display:flex;flex-direction:column;gap:3px}
+.cchart figcaption b{font-weight:500;font-size:15px}
+.cchart figcaption span{font-size:13px;color:var(--muted)}
+.cbars{display:flex;flex-direction:column;gap:6px}
+.cbar{display:grid;grid-template-columns:minmax(90px,38%) minmax(0,1fr) 46px;align-items:center;gap:8px;font-size:12.5px;position:relative;border-radius:6px}
+.cbar:focus-visible{outline:2px solid var(--ink)}
+.ck{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ctrack{height:14px;position:relative;display:block}
+.cfill{display:block;height:100%;background:var(--violet);border-radius:0 4px 4px 0}
+.cv{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.cbar.zero .ck{font-weight:600}
+.cbar.zero .ctrack{border:1.5px dashed var(--vD);border-radius:4px}
+.cnone{position:absolute;left:8px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--vD)}
+.ctip{position:absolute;left:38%;bottom:calc(100% + 4px);background:var(--ink);color:#fff;font-size:12px;padding:4px 8px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .15s;z-index:2}
+.cbar:hover .ctip,.cbar:focus .ctip{opacity:1}
+.cbar:hover .cfill{filter:brightness(.9)}
+.ctable summary{cursor:pointer;font-size:12.5px;color:var(--muted)}
+#tier1 .term small{font-size:12px}
+#tier1 a{color:inherit}
 </style>
 </head>
 <body>
@@ -768,6 +802,21 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
     </div>
   </section>
 
+  <!-- CASE FILES -->
+  <section class="sec" aria-labelledby="h-cs" data-tab="cases">
+    <div class="sec-head"><div><div class="tag">Case files</div><h2 id="h-cs">Would any rule have caught this?</h2></div><p>Real shipments, companies and corridors from Sayari's trade and corporate data, each run through the rules it passed. A dated snapshot, retrieved 9 November 2026, not a live feed.</p></div>
+    <div class="rtabs" role="tablist" id="casetabs"></div>
+    <article class="card gbody" id="casebody" aria-live="polite"></article>
+  </section>
+  <section class="sec" aria-labelledby="h-cor" data-tab="cases">
+    <div class="sec-head"><div><div class="tag">Corridors</div><h2 id="h-cor">What the data can and can't see</h2></div><p>Where a gap lets ore change identity, the records show it. Where a whole corridor is missing, that absence is a finding for regulators: a data void, not proof the trade is clean.</p></div>
+    <div class="corrs" id="corridors"></div>
+  </section>
+  <section class="sec" aria-labelledby="h-t1" data-tab="cases">
+    <div class="sec-head"><div><div class="tag">The fusion link</div><h2 id="h-t1">Can tape and wire makers be traced to the mines?</h2></div><p>We ran Sayari's upstream supply chain search on three suppliers of fusion magnet conductor. None reaches a mineral source. The last link can only be closed by suppliers disclosing it, which is why the solutions ask fusion buyers and funders to require that.</p></div>
+    <div class="terms" id="tier1"></div>
+  </section>
+
   <!-- RULE GUIDE -->
   <section class="sec" aria-labelledby="h-gd" data-tab="rules">
     <div class="sec-head"><div><div class="tag">Rule guide</div><h2 id="h-gd">The 13 rules, explained</h2></div><p>What each rule requires, where it leaks in each region, its key legal terms in plain language, how investigators and journalists can use it, and links to the official texts.</p></div>
@@ -895,9 +944,16 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
       <div class="mgrid2" id="srcHuman"></div>
       <h4>4.7 Solutions sources</h4>
       <div class="mgrid2" id="srcSol"></div>
-      <h4>4.8 Stress test evidence</h4>
+      <h4>4.8 Case files: trade data from Sayari</h4>
+      <p>The Case files tab uses Sayari's trade and corporate data, retrieved on 9 November 2026. It is a dated snapshot built into the page, not a live query. Three cautions shaped how it was used:</p>
+      <ul>
+        <li><b>Filters were checked, not trusted.</b> Some search filters (shipper name, receiver name and date) did not apply reliably. Every shipment cited was confirmed by its own record: customs declaration or transaction numbers, dates, weights and addresses.</li>
+        <li><b>One company, many records.</b> Trade records often appear under spelling variants that are not linked to a company's sanctions or risk listing. Variants were matched on address and trade partners, and the case files say where a match is only likely.</li>
+        <li><b>Absence is not innocence.</b> Sayari holds no Myanmar customs data and no shipment-level records of China's imports from Myanmar. Missing corridors are reported as data voids.</li>
+      </ul>
+      <h4>4.9 Stress test evidence</h4>
       <div class="mgrid2" id="srcLeaks"></div>
-      <h4>4.9 Supply map</h4>
+      <h4>4.10 Supply map</h4>
       <p>Documented routes rest on the region sources in 4.3. Companies marked "Example" are major producers at each stage, listed from general industry knowledge for orientation; none is linked to these mines in the research.</p>
     </div>
 
@@ -1029,7 +1085,7 @@ const REGIONS=[
    flr:["N", "From December 2027 the EU bans products made with forced labor at any stage, including the mine.", "Same limit as the US ban: pollution and armed-group revenue are not forced labor, so the ban will have nothing to act on even after 2027.", {"t": "harm", "by": "law", "n": 0, "ev": "doc", "src": [["Global Witness, Myanmar's poisoned mountains (Aug 2022)", "https://globalwitness.org/en/campaigns/transition-minerals/myanmars-poisoned-mountains"]], "fix": "Add an import control for conflict financing and severe environmental harm on named minerals."}],
    uflpa:["R", "The documented harm in Kachin is pollution and armed-group revenue, not forced labor, and the ore is not processed in Xinjiang."],
    sanc:["D", "The EU freezes the assets of 105 junta-linked people and 22 entities, and the US lists other junta-linked parties.", "Since October 2024 the main mines have been held by the Kachin Independence Army, which none of the measures reviewed here list. In July 2025 the US removed four junta-linked parties from its list. No measure targets the rare earth trade itself, so the money moves without touching a listed name.", {"t": "list", "by": "gov", "n": 0, "ev": "doc", "src": [["The Star: EU extends Myanmar sanctions (Apr 2026)", "https://www.thestar.com.my/news/world/2026/04/27/eu-extends-sanctions-against-myanmar-by-a-year"], ["ThePrint: US lifts some Myanmar sanctions (Jul 2025)", "https://theprint.in/world/us-lifts-some-myanmar-sanctions-after-general-asked-trump-for-relief/2702840"], ["CNBC, citing Chinese customs data and CSIS (Jun 2025)", "https://www.cnbc.com/2025/06/24/chinas-rare-earth-dominance-myanmar-plays-a-critical-role-.html"]], "fix": "Sanction the trade: designate buyers and processors that take ore from armed-group-held mines."}],
-   cn:["D", "China licenses every export of yttrium and gadolinium. Since 2024–25 separators must also log every flow, including imported ore, in a state traceability system.", "The Chinese state sees Myanmar feed arrive, in customs data and in the new traceability platform, but publishes neither the license data nor the traceability records. The yttrium leaves as licensed Chinese product, and the record of where it was dug stays with the government.", {"t": "secret", "by": "gov", "n": 2, "ev": "doc", "src": [["CNBC, citing Chinese customs data and CSIS (Jun 2025)", "https://www.cnbc.com/2025/06/24/chinas-rare-earth-dominance-myanmar-plays-a-critical-role-.html"], ["Faegre Drinker: China's Regulations on Rare Earth Administration (Oct 2024)", "https://www.faegredrinker.com/en/insights/publications/2024/10/china-issues-regulations-on-rare-earth-administration"], ["Global Times via GlobalSecurity: rare earth quota and traceability rules extended to imported ore (Aug 2025)", "https://www.globalsecurity.org/wmd/library/news/china/2025/08/china-250822-globaltimes01.htm"]], "fix": "Make the separator's origin records a condition of purchase, and press for their release in trade talks."}],
+   cn:["D", "China licenses every export of yttrium and gadolinium. Since 2024–25 separators must also log every flow, including imported ore, in a state traceability system.", "The Chinese state sees Myanmar feed arrive, in customs data and in the new traceability platform, but publishes neither the license data nor the traceability records. The yttrium leaves as licensed Chinese product, and the record of where it was dug stays with the government. Of 995 yttrium oxide shipments into the US in Sayari's records, 2 carry any origin field and none names a mine country (see Case files).", {"t": "secret", "by": "gov", "n": 2, "ev": "doc", "src": [["CNBC, citing Chinese customs data and CSIS (Jun 2025)", "https://www.cnbc.com/2025/06/24/chinas-rare-earth-dominance-myanmar-plays-a-critical-role-.html"], ["Faegre Drinker: China's Regulations on Rare Earth Administration (Oct 2024)", "https://www.faegredrinker.com/en/insights/publications/2024/10/china-issues-regulations-on-rare-earth-administration"], ["Global Times via GlobalSecurity: rare earth quota and traceability rules extended to imported ore (Aug 2025)", "https://www.globalsecurity.org/wmd/library/news/china/2025/08/china-250822-globaltimes01.htm"]], "fix": "Make the separator's origin records a condition of purchase, and press for their release in trade talks."}],
    local:["D", "Under Myanmar law this mining is illegal.", "The state lost control after the 2021 coup. The KIA now decides when ore may leave: in March 2025 it let stockpiles ship to China. Myanmar is suspended from the EITI, so licenses and payments go unpublished.", {"t": "state", "by": "armed", "n": 0, "ev": "doc", "src": [["Reuters via Bangkok Post: KIA allows export of rare earth stockpiles to China (Mar 2025)", "https://bangkokpost.com/world/2988924/myanmar-rebel-group-allows-export-of-rare-earth-inventories-to-china-sources-say"], ["EITI: Myanmar", "https://eiti.org/countries/myanmar"], ["Global Witness, Myanmar's poisoned mountains (Aug 2022)", "https://globalwitness.org/en/campaigns/transition-minerals/myanmars-poisoned-mountains"]], "fix": "Treat ore taxed by any armed group as ineligible, and fund independent satellite and community monitoring."}]}},
  {id:"wa",name:"Shan & Wa",country:"Myanmar",minerals:"Rare earths · tin",el:["RE","Sn"],
   route:[["⛏","Wa & Shan mines","Myanmar"],["🚚","Across the border","into China"],["⚗","Separation & smelting","China","Mixed, origin lost"],["🧲","REBCO tape · Nb₃Sn wire","fusion magnets"]],
@@ -1060,7 +1116,7 @@ const REGIONS=[
    lksg:["D", "Child labor is in scope, but risk analysis normally stops at direct suppliers.", "A German wire buyer checks its wire maker, not Bangka's pits. Without a complaint it never holds the knowledge that would oblige it to look further.", {"t": "tier", "by": "law", "n": 3, "ev": "str", "src": [["BAFA: LkSG overview", "https://www.bafa.de/EN/Supply_Chain_Act/Overview/overview_node.html"]], "fix": "Make checks to the smelter automatic for named critical minerals."}],
    oecd:["V", "The Guidance covers tin from all high-risk areas, and the tin industry built its programs on it.", "Illegal ore entered a state company's legal supply for seven years without the industry's OECD-based programs flagging it. Voluntary checks read the same paperwork the scheme corrupted.", {"t": "vol", "by": "co", "n": 1, "ev": "doc", "src": [["VOI: smelter officials charged; shell companies in the Timah case", "https://voi.id/en/amp/411563"], ["OECD Minerals Due Diligence Guidance", "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-supply-chains-of-minerals-from-conflict-affected-and-high-risk-areas_9789264252479-en.html"]], "fix": "Write the Guidance into binding law, with mine-site verification for high-risk areas."}],
    jp:["V", "Japan recommends human rights due diligence across supply chains.", "Japanese wire makers face no duty to check whether their tin came from a licensed mine or an illegal pit.", {"t": "vol", "by": "gov", "n": 3, "ev": "str", "src": [["METI guidelines (provisional English translation)", "https://www.meti.go.jp/policy/economy/business-jinken/guidelines/provisionalenglishtranslation.pdf"]], "fix": "Make the guidelines binding for critical minerals."}],
-   ind:["D", "Smelter audits check that a smelter's ore comes from legal, conflict-free sources.", "An audit reads permits and purchase records. In the Timah case the permits were the cover: ore from illegal miners was bought by private smelters and booked as PT Timah's own. A paper audit has nothing to catch.", {"t": "paper", "by": "scheme", "n": 1, "ev": "str", "src": [["Tempo: prosecutors seize five smelters in the PT Timah case (Apr 2024)", "https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case"], ["VOI: smelter officials charged; shell companies in the Timah case", "https://voi.id/en/amp/411563"]], "fix": "Add mine-site and satellite checks of where ore was dug, not only permit checks."}],
+   ind:["D", "Smelter audits check that a smelter's ore comes from legal, conflict-free sources.", "An audit reads permits and purchase records. In the Timah case the permits were the cover: ore from illegal miners was bought by private smelters and booked as PT Timah's own. A paper audit has nothing to catch. In Sayari, the trade record for Refined Bangka Tin, which exported 485 tin shipments from 2019 to 2023, carries no risk flag; the corruption flag sits on a separate, unlinked record (see Case files).", {"t": "paper", "by": "scheme", "n": 1, "ev": "doc", "src": [["Sayari: Refined Bangka Tin trade record", "https://graph.sayari.com/resource/entity/uat1s7YjsRfjrl1i1rP_mA"], ["Tempo: prosecutors seize five smelters in the PT Timah case (Apr 2024)", "https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case"], ["VOI: smelter officials charged; shell companies in the Timah case", "https://voi.id/en/amp/411563"]], "fix": "Add mine-site and satellite checks of where ore was dug, not only permit checks."}],
    t307:["D", "CBP can bar goods made with forced or indentured child labor.", "An ILO survey found about 6,300 child laborers in Bangka's informal tin mines, mostly in household pits. Hazardous child labor is not automatically forced labor, so it can fall outside the ban entirely.", {"t": "harm", "by": "law", "n": 0, "ev": "doc", "src": [["ILO, child labour survey in Bangka Belitung tin mining (Dec 2015)", "https://www.ilo.org/publications/sectoral-survey-child-labour-informal-tin-mining-kepulauan-bangka-belitung"]], "fix": "Extend import bans to the worst forms of child labor, not only forced child labor."}],
    flr:["N", "From December 2027 the EU bans products made with forced labor, including forced child labor.", "The same gap as the US ban: children working dangerous pits for family income may not meet the forced labor test.", {"t": "harm", "by": "law", "n": 0, "ev": "doc", "src": [["ILO, child labour survey in Bangka Belitung tin mining (Dec 2015)", "https://www.ilo.org/publications/sectoral-survey-child-labour-informal-tin-mining-kepulauan-bangka-belitung"]], "fix": "Extend the ban to the worst forms of child labor."}],
    uflpa:["R", "Bangka tin is smelted in Indonesia. No step passes through Xinjiang or a listed company, and the documented harm is not forced labor."],
@@ -1082,7 +1138,7 @@ const REGIONS=[
    t307:["P", "Amnesty documented forced labor at Rubaya in 2026, which is grounds for a petition and a detention order.", "CBP has acted region-wide on a DRC mined product before, holding artisanal gold in 2019. For coltan, mixing in Rwanda and refining abroad make it hard to link Rubaya to specific imports.", {"t": "proof", "by": "gov", "n": 1, "ev": "doc", "src": [["Amnesty International, 'We didn't come to play' (Sep 2026)", "https://www.amnesty.org/en/documents/afr62/1454/2026/en"], ["Assent: CBP detention order on artisanal gold from the DRC (2019)", "https://www.assent.com/blog/customs-enforcement-gold-drc/"]], "fix": "Issue an order covering coltan exported through Rwanda until exporters prove origin."}],
    flr:["N", "Forced labor at Rubaya fits squarely, from December 2027.", "Until then the EU has no product ban. Afterwards, mixing in Rwanda creates the same proof problem the US faces.", {"t": "proof", "by": "law", "n": 1, "ev": "doc", "src": [["Amnesty International, 'We didn't come to play' (Sep 2026)", "https://www.amnesty.org/en/documents/afr62/1454/2026/en"]], "fix": "Flag Rwandan coltan exports in the EU risk database so importers must prove origin."}],
    uflpa:["D", "Goods made by a company on the Entity List are presumed made with forced labor.", "Coltan refined in China outside Xinjiang carries no presumption unless DHS lists the refiner, even though forced labor at the mine is documented.", {"t": "list", "by": "gov", "n": 2, "ev": "str", "src": [["Amnesty International, 'We didn't come to play' (Sep 2026)", "https://www.amnesty.org/en/documents/afr62/1454/2026/en"], ["DHS: UFLPA Entity List", "https://www.dhs.gov/uflpa-entity-list"]], "fix": "List refiners that buy from documented forced-labor mines."}],
-   sanc:["D", "In 2025 the US sanctioned PARECO-FF, a mining cooperative and two Hong Kong buyers; the EU sanctioned M23 leaders, Rwandan army officers and a company.", "The US mining sanctions hit the mine's former controller, not M23, which runs it now. Sanctions follow named parties, and the coltan leaves through Rwandan exporters: Global Witness found seven companies handled almost 85% of Rwanda's coltan exports from 2023 to 2025.", {"t": "list", "by": "gov", "n": 1, "ev": "doc", "src": [["Mining.com: US sanctions armed group and mining firms over Congo minerals (Aug 2025)", "https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals"], ["AllAfrica / Global Witness: EU sanctions and smuggling (Apr 2025)", "https://allafrica.com/stories/202504280598.html"], ["Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)", "https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics"]], "fix": "Designate exporters and refiners that handle coltan from M23-held mines."}],
+   sanc:["D", "In 2025 the US sanctioned PARECO-FF, a mining cooperative and two Hong Kong buyers; the EU sanctioned M23 leaders, Rwandan army officers and a company.", "The US mining sanctions hit the mine's former controller, not M23, which runs it now. Sanctions follow named parties, and the coltan leaves through Rwandan exporters: Global Witness found seven companies handled almost 85% of Rwanda's coltan exports from 2023 to 2025. In Sayari's records the sanctioned East Rise listing carries no trade at all; its shipments sit under unsanctioned spellings at the same address, and one of its Rwandan suppliers was selling coltan to a Japanese trader by 2026 (see Case files).", {"t": "list", "by": "gov", "n": 1, "ev": "doc", "src": [["Mining.com: US sanctions armed group and mining firms over Congo minerals (Aug 2025)", "https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals"], ["AllAfrica / Global Witness: EU sanctions and smuggling (Apr 2025)", "https://allafrica.com/stories/202504280598.html"], ["Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)", "https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics"], ["Sayari: East Rise trade record", "https://graph.sayari.com/resource/entity/vdCIJ54CEY7kXe8uUJMsvg"]], "fix": "Link sanctions listings to every trade-record spelling of a designated company, and designate exporters and refiners that handle coltan from M23-held mines."}],
    cn:["R", "China's rare earth controls don't cover tantalum or niobium."],
    local:["D", "DRC law bans armed-group mining; Rwanda certifies its exports as Rwandan.", "Congolese law doesn't operate in M23-held Rubaya. Across the border, UN experts say Rwandan authorities inflate domestic production figures to hide smuggled exports, and Global Witness found no confiscation of smuggled coltan in two years. The EU signed a raw materials partnership with Rwanda in 2024; the European Parliament called for its suspension in 2025.", {"t": "state", "by": "gov", "n": 1, "ev": "doc", "src": [["Swissinfo on the UN Group of Experts report (Jul 2025)", "https://www.swissinfo.ch/eng/international-geneva/un-experts-warn-congos-conflict-minerals-slipping-into-global-market/89978793"], ["Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)", "https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics"], ["European Commission: EU–Rwanda raw materials partnership (Feb 2024)", "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_822"], ["Mongabay: European Parliament calls for suspension (Feb 2025)", "https://news.mongabay.com/2025/02/eu-parliament-calls-for-end-to-rwanda-mineral-pact-over-drc-conflict-links"]], "fix": "Condition partnerships and market access on independent checks of Rwanda's exports against its production."}]}}
 ];
@@ -1537,6 +1593,105 @@ document.getElementById("photoCredits").innerHTML=Object.values(PHOTO_INFO).map(
 
 renderStrips();renderChecks();renderCoils();renderMagnet();renderRegion();renderMap();renderDetail();
 
+/* ---------- case files (Sayari snapshot, 9 Nov 2026) ---------- */
+const SG=id=>"https://graph.sayari.com/resource/entity/"+id;
+const CASES=[
+ {r:"rubaya",q:"Would any rule have caught East Rise?",title:"The sanctioned buyer that trade records never named",
+  sum:"On 12 August 2025 the US sanctioned East Rise Corporation, a Hong Kong buyer of minerals from a Rubaya-area cooperative. In Sayari's records the sanctioned listing has no trade attached. The company's shipments sit under five unsanctioned name variants at the same Hong Kong address.",
+  steps:[
+   ["Mar 2023 – Feb 2025","CDMC, the Congolese cooperative later sanctioned for selling ore from areas held by the PARECO-FF militia, ships niobium-tantalum ore (HS 261590) to Star Dragon Corporation in Hong Kong.",[["Star Dragon in Sayari",SG("EOhsW8l7khZBEzP0r4qzVQ")]]],
+   ["Jun – Nov 2023","East Rise ships tantalite concentrate from the DRC and the UAE to Ulba Metallurgical Plant, a state-owned processor in Kazakhstan (lot codes such as DMC/NK/0000189), and niobium ingots of over 99.95% purity to TOO Minium in Kazakhstan. Niobium is the metal in fusion's low-temperature magnet wire.",[["East Rise trade record",SG("vdCIJ54CEY7kXe8uUJMsvg")]]],
+   ["Jun – 12 Aug 2025","Rwandan exporters, including Tawotin Ltd, Rani Mining and Derick Mining, ship coltan, tin and tungsten ore to East Rise. The last arrivals are dated 12 August 2025.",[["Tawotin Ltd",SG("OPLZQzwwKb1u-D0QIVfs1w")]]],
+   ["12 Aug 2025","The US Treasury sanctions East Rise (SDN no. 55048), Star Dragon (55049), CDMC (55047) and PARECO-FF.",[["Sanctioned listing in Sayari",SG("RXGsi4gAb93ZNWFwc4MkPA")],["Mining.com (Aug 2025)","https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals"]]],
+   ["14 Aug 2025","Three cargoes of cassiterite (tin ore), about 75 tonnes worth $1.63 million, arrive at Port Klang for Malaysia Smelting Corporation. The shipper is 'EAST RISE CORPORATION LTD', at the address on the sanctions listing. Malaysian declarations B182025108025031, -032 and -513.",[["Malaysia Smelting Corporation",SG("pwMtR-67xAIYzs7_EWhcVQ")]]],
+   ["Jan – Jun 2026","Tawotin keeps exporting. Its coltan, tin and tungsten now go to GM Trading, a Japanese company. One cargo of 9.8 tonnes of coltan arrived on 3 June 2026 (Tanzanian TANSAD 1370124).",[["GM Trading Co.",SG("MTmsF9fB3qY9k4ghxYeg-w")]]]],
+  tests:[
+   ["sanc","Named the company, but the trade records use other spellings and aren't linked to the listing. Malaysia Smelting is not a US person, so US sanctions don't oblige it to screen at all."],
+   ["df","A US company that lists a tin smelter on Form SD isn't required to check who supplied that smelter in a given month."],
+   ["jp","GM Trading is in Japan, where due diligence is voluntary. Nothing requires it to ask where Tawotin's coltan came from."]],
+  flags:[["Malaysia Smelting Corporation","Imports from an OFAC-sanctioned entity","None. A Malaysian company is not bound by US sanctions."],["EAST RISE CORPORATION LTD (trade record)","Exports conflict minerals","None. The record isn't linked to the sanctions listing, so a name screen passes."],["Tawotin Ltd","Exports conflict minerals; child and forced labor risk","None in its own buyers' jurisdictions shown here."],["GM Trading Co. (Japan)","Imports conflict minerals","None. Japan's guidelines are voluntary."]],
+  verdict:"Sayari shows no East Rise shipments after 14 August 2025. But the trade didn't stop: one of its suppliers had a new buyer within five months, and no rule required that buyer, or the smelter that took the last cargo, to ask where the ore came from.",
+  limits:"Sayari links Tawotin to East Rise, not directly to Rubaya, so this case does not show that Tawotin's coltan came from Rubaya. The 14 August cargo probably left Tanzania before the designation. Each shipment was checked by its customs declaration number; the underlying documents were not opened."},
+ {r:"bangka",q:"Would any rule have caught Refined Bangka Tin's exports?",title:"A convicted smelter's tin, with clean paperwork",
+  sum:"PT Refined Bangka Tin was one of the private smelters at the center of the PT Timah case, and its director was jailed. Indonesian export records show where its tin went while the scheme prosecutors described was running.",
+  steps:[
+   ["2015 – 2022","Prosecutors say ore from illegal miners was bought by private smelters and booked under PT Timah's legal permits, using shell companies.",[["Tempo (Apr 2024)","https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case"]]],
+   ["Nov 2019 – Dec 2023","Refined Bangka Tin exports 485 shipments of refined tin (HS 800110) from Bangka. The largest buyers are Toyota Tsusho (101 shipments) and its Singapore arm (88). Others go to India, China, Korea, the US and metal warehouses in Rotterdam.",[["Refined Bangka Tin trade record",SG("uat1s7YjsRfjrl1i1rP_mA")],["Toyota Tsusho",SG("9nS1mjvtwYjXuvZfRe1a1A")]]],
+   ["Dec 2023","Its last recorded exports: cargoes of about 25 tonnes, worth around $600,000 each, to Toyota Tsusho in Nagoya.",[]],
+   ["Apr 2024","Prosecutors seize the smelter. Its director is later sentenced to eight years.",[["Tempo (Apr 2024)","https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case"]]],
+   ["Oct 2025","The state hands the seized smelters to PT Timah, the state company whose permits were abused.",[["Mining.com (Oct 2025)","https://www.mining.com/web/indonesia-hands-over-six-seized-tin-smelters-to-state-miner"]]]],
+  tests:[
+   ["df","Indonesia is not a covered country. A US filer naming this smelter had nothing more to report."],
+   ["eucm","Tin metal entering Rotterdam is in scope, but the importer decides whether Bangka is high-risk, and the paperwork came from a state permit."],
+   ["jp","Toyota Tsusho is Japanese, where due diligence is voluntary."],
+   ["ind","Sayari's trade record for the smelter carries no risk flag. The corruption flag sits on a separate record of the same company that isn't linked to its shipments."],
+   ["local","Enforcement came after the exports: the last shipment left in December 2023, and the smelter was seized in April 2024."]],
+  flags:[["Refined Bangka Tin (trade record)","No flag","Nothing to prompt a check."],["PT. Refined Bangka Tin (risk record)","Bribery and corruption, recent","Not linked to the shipments, so screening the exporter on a bill of lading finds nothing."]],
+  verdict:"For four years, tin from a smelter later convicted over illegal ore moved to major buyers with clean paperwork. No rule required those buyers to look past the export permit.",
+  limits:"These records don't show which shipments, if any, contained illegal ore. The court case covers 2015 to 2022; Sayari's Indonesian export data starts in 2019."},
+ {r:"wa",q:"Would any rule have caught Wa State tin?",title:"The trade that isn't in the data",
+  sum:"Wa State's Man Maw mine has been estimated at 7 to 8% of world tin concentrate supply, almost all of it sold to smelters in Yunnan. In the commercial trade data buyers and investigators rely on, that flow is close to invisible.",
+  steps:[
+   ["Trade data","Sayari holds 2,160 records of tin ore entering China. The leading departure countries are Brazil, Australia, Rwanda, Russia and Malaysia. Myanmar does not appear.",[]],
+   ["Sources","Sayari holds no Myanmar customs data at all, only company registry records.",[]],
+   ["Exports","A search for tin ore leaving Myanmar finds two records ever, both to Malaysia or Vietnam.",[]]],
+  tests:[
+   ["df","A US filer whose smelter buys Wa tin sees only the smelter, and Myanmar isn't on the country list."],
+   ["sanc","The UWSA has been on the US sanctions list since 2003, but no shipment record names it, so there is nothing for a screen to catch."],
+   ["cn","China's customs records this trade, but publishes no shipment-level data."]],
+  flags:[],
+  verdict:"No rule required anyone to ask, and the data buyers and investigators use can't answer. This is a data void, not evidence that the trade is clean.",
+  limits:"Absence in Sayari reflects missing sources, with no shipment-level customs data from Myanmar or for China's imports from it, not an absence of trade. The 7 to 8% figure is an industry estimate reported by Shanghai Metals Market."},
+ {r:"kachin",q:"Would any rule have caught Kachin yttrium?",title:"Yttrium oxide with no past",
+  sum:"Kachin supplies a large share of the world's heavy rare earths, including yttrium, which are separated in southern China. By the time yttrium oxide reaches a buyer, the record no longer says where the ore was dug.",
+  steps:[
+   ["Into China","Sayari holds 795 records of rare earth compounds (HS 2846) entering China. Departure countries include the US, Malaysia, Russia, Vietnam and India. Myanmar does not appear.",[]],
+   ["Into the US","It holds 995 records described as yttrium oxide arriving in the US. Only 2 carry any product-origin field, and none names the country where the ore was mined.",[]],
+   ["Suppliers","Among the larger suppliers of yttrium oxide to the US in these records is Qiandong Rare Earth Group of Ganzhou, Jiangxi, a center of heavy rare earth separation. Its records show where it shipped from, not what ore it processed.",[["Qiandong Rare Earth Group",SG("t-4HuZtPd2C0pL8drA9Lxw")]]]],
+  tests:[
+   ["df","Rare earths aren't covered, so no filer has to ask."],
+   ["cn","China licenses the export and logs imported ore in a state system, but neither record travels with the shipment."],
+   ["t307","Pollution and armed-group revenue are not forced labor, so the ban has nothing to act on."]],
+  flags:[],
+  verdict:"No rule required anyone to ask, and by the time the yttrium reaches a buyer there is no record to ask with.",
+  limits:"This case doesn't show that any named supplier processed Myanmar ore. It shows that the records reaching buyers can't say either way."}];
+const CORRIDORS=[
+ {t:"Tin ore entering China, by departure country",u:"records",note:"Myanmar, historically China's largest tin ore supplier, has no records.",rows:[["Brazil",509],["Australia",309],["Rwanda",200],["Russia",119],["Malaysia",116],["Kenya",90],["Venezuela",79],["Tanzania",67],["Myanmar",0]],foot:"HS 2609. Among records that name a product origin, the DRC leads with 236."},
+ {t:"Rare earth compounds entering China, by departure country",u:"records",note:"Myanmar has no records, though Chinese customs counts it as a leading source.",rows:[["United States",277],["Malaysia",197],["Russia",114],["Vietnam",97],["India",52],["South Korea",17],["Myanmar",0]],foot:"HS 2846, 795 records in total."},
+ {t:"East Rise's trade, by Sayari record",u:"trade records",note:"The sanctioned listing carries none of the company's trade.",rows:[["SDN listing",0],["…CORPORATION LTD",133],["E.R.C LTD ×2",16],["…CORPOLATION…",4],["…COPROPRATION…",1]],foot:"Rows: the sanctioned listing (SDN 55048); EAST RISE CORPORATION LTD; two records named E.R.C LTD, likely the same firm; EAST RISE , CORPOLATION , LTD; EAST RISE COPROPRATION LTD. Counts are shipments sent plus received on each record. The main record shares the sanctioned company's Hong Kong address; the others are spellings in Tanzanian and Rwandan export records."}];
+const TIER1=[
+ ["Faraday Factory Japan","REBCO tape for compact fusion magnets","The upstream trail in Sayari ends at its equipment and tape partners. No mineral supplier appears.",SG("C13ZLDlfTD93f5CM_BpokA")],
+ ["Shanghai Superconductor Technology","REBCO tape","No upstream trade records.",SG("-NNFlJQpxCMOLmMbA66_TQ")],
+ ["Western Superconducting Technologies","NbTi and Nb₃Sn wire, a supplier to ITER","No upstream trade records. It shares an investor, CITIC Securities, with Ningxia Orient Tantalum, which bought from East Rise, but a shareholder link is not a supply link.",SG("sHd3C6y1EF_j7cxUmp8p4w")]];
+function barChart(c,i){
+  const max=Math.max(...c.rows.map(r=>r[1]));
+  return `<figure class="cchart"><figcaption><b>${esc(c.t)}</b><span>${esc(c.note)}</span></figcaption>
+   <div class="cbars" role="list">${c.rows.map(([k,v])=>`<div class="cbar${v===0?" zero":""}" role="listitem" tabindex="0" aria-label="${esc(k)}: ${v} ${c.u}"><span class="ck">${esc(k)}</span><span class="ctrack"><span class="cfill" style="width:${v?Math.max(1.5,v/max*100):0}%"></span>${v===0?`<span class="cnone">no records</span>`:""}</span><span class="cv">${v.toLocaleString()}</span><span class="ctip">${esc(k)}: ${v.toLocaleString()} ${c.u}</span></div>`).join("")}</div>
+   <p class="fine">${esc(c.foot)} Source: Sayari trade data, retrieved 9 November 2026.</p>
+   <details class="ctable"><summary>Data table</summary><table class="mt"><thead><tr><th>${i===2?"Record":"Country"}</th><th>${esc(c.u)}</th></tr></thead><tbody>${c.rows.map(([k,v])=>`<tr><td>${esc(k)}</td><td>${v}</td></tr>`).join("")}</tbody></table></details></figure>`;
+}
+let caseSel="rubaya";
+function renderCases(){
+  const tabs=document.getElementById("casetabs");
+  tabs.innerHTML=CASES.map(c=>{const r=R(c.r);return `<button class="rtab" role="tab" aria-selected="${c.r===caseSel}" data-c="${c.r}">${esc(r.name)}<small>${esc(c.title)}</small></button>`}).join("");
+  tabs.querySelectorAll(".rtab").forEach(b=>b.onclick=()=>{caseSel=b.dataset.c;renderCases()});
+  const c=CASES.find(x=>x.r===caseSel),r=R(c.r);
+  document.getElementById("casebody").innerHTML=`
+   <div class="tag">${esc(r.name)} · ${esc(c.q)}</div><h3 class="gh">${esc(c.title)}</h3>
+   <p class="gsum">${esc(c.sum)}</p>
+   <h4>What the records show</h4>
+   <ol class="ctl">${c.steps.map(([d,t,s])=>`<li><span class="cd">${esc(d)}</span><div><p>${esc(t)}</p>${s.length?`<div class="solsrc">${s.map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join("")}</div>`:""}</div></li>`).join("")}</ol>
+   <h4>Run through the rules</h4>
+   <div class="ctests">${c.tests.map(([id,t])=>{const v=r.cells[id][0];return `<button class="gleak" data-id="${id}" style="--glow:var(${vVar[v]})"><div class="lc-top"><span class="sw c-${v}">${SYM[v]}</span><b>${esc(RULES[id].s)}</b><span class="muted">${V[v]}</span></div><p>${esc(t)}</p></button>`}).join("")}</div>
+   ${c.flags.length?`<h4>Sayari flags it; no rule makes anyone check</h4><div class="mt-wrap"><table class="mt"><thead><tr><th>Party</th><th>Sayari risk flag</th><th>Legal duty to check</th></tr></thead><tbody>${c.flags.map(f=>`<tr><td>${esc(f[0])}</td><td>${esc(f[1])}</td><td>${esc(f[2])}</td></tr>`).join("")}</tbody></table></div>`:""}
+   <div class="verdict"><span class="tag">Verdict</span><p>${esc(c.verdict)}</p></div>
+   <p class="fine"><b>Limits.</b> ${esc(c.limits)}</p>`;
+  document.querySelectorAll("#casebody .gleak").forEach(b=>b.onclick=()=>{st.cell={r:c.r,rule:b.dataset.id};renderMap();renderDetail();go("map")});
+  document.getElementById("corridors").innerHTML=CORRIDORS.map(barChart).join("");
+  document.getElementById("tier1").innerHTML=TIER1.map(([n,w,t,u])=>`<div class="term"><b><a href="${u}" target="_blank" rel="noopener">${esc(n)} ↗</a></b><small class="muted">${esc(w)}</small><span>${esc(t)}</span></div>`).join("");
+}
+renderCases();
+
 /* ---------- overview ---------- */
 function renderStats4(){
   const gov=BYCOUNT("gov");
@@ -1787,7 +1942,7 @@ function renderSMCompany(){
 smInit();
 
 /* ---------- tabs ---------- */
-const TABS=[["overview","Overview"],["reactor","Reactor"],["why","Why it matters"],["supply","Supply map"],["regions","Regions"],["map","Leak map"],["rules","Rule guide"],["solutions","Solutions"],["methods","Data & methods"]];
+const TABS=[["overview","Overview"],["reactor","Reactor"],["why","Why it matters"],["supply","Supply map"],["regions","Regions"],["map","Leak map"],["cases","Case files"],["rules","Rule guide"],["solutions","Solutions"],["methods","Data & methods"]];
 let curTab=null;
 function go(id){if(location.hash.slice(1)===id)showTab(id);else location.hash=id}
 function showTab(id){

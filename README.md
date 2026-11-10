@@ -10,7 +10,7 @@ Coilchain tests 13 rules (disclosure and due diligence laws, industry schemes, b
 
 | File | What it is |
 |---|---|
-| [`index.html`](index.html) | The interactive site: overview, reactor model, human rights evidence, supply map, region explorer, leak map, rule guide, solutions, and data and methods. Self-contained; served by GitHub Pages. |
+| [`index.html`](index.html) | The interactive site: overview, reactor model, human rights evidence, supply map, region explorer, leak map, case files built from Sayari trade data, rule guide, solutions, and data and methods. Self-contained; served by GitHub Pages. |
 | [`CONCEPT.md`](CONCEPT.md) | The research: audiences, the 13 rules with plain-language terms and official texts, and the 4 regions with documented harm and a stress test of every rule the abuse's route passes. Data sections are generated from the site. |
 | [`DATA_METHODS_SOURCES.md`](DATA_METHODS_SOURCES.md) | How the stress test is built, how leaks are named and classified, every source, photo credits, corrections and limitations. |
 

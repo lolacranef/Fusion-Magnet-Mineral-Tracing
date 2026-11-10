@@ -63,7 +63,7 @@ Each test starts from the documented abuse and follows the mineral along its rou
 | The rule's own design | Scope, lists and thresholds written into the rule | 16 | 7 |
 | Governments | Officials who issue cover, keep data secret, or don't enforce | 18 | 11 |
 | Companies | Buyers and suppliers that don't ask, or accept paper | 6 | 6 |
-| Industry schemes | Audits and tags accepted as proof | 4 | 3 |
+| Industry schemes | Audits and tags accepted as proof | 4 | 4 |
 | Armed groups | Groups that run the mines and decide what leaves | 1 | 1 |
 
 ## The rules
@@ -245,7 +245,7 @@ The private systems most laws lean on: smelter audits under the Responsible Mine
 - **Where it leaks:**
   - *Kachin: leaks (not knowing is safe; opened by companies).* In 2024 Global Witness found China's heavy rare earth quota held by two state-owned groups, one formed from companies that had disclosed buying Myanmar heavy rare earths. Brands' supplier codes stop at the magnet or tape maker, so a purchase made through these groups looks clean on paper.
   - *Shan & Wa: leaks (mixing; opened by industry schemes).* Yunnan Tin mixed Wa ore with Chinese ore, so it could not say which shipments contained it (Reuters, 2016). Global Witness said then that the main audit scheme had focused only on central Africa. Downstream buyers accepted the smelter's certificate as proof.
-  - *Bangka Belitung: leaks (laundering paperwork; opened by industry schemes).* An audit reads permits and purchase records. In the Timah case the permits were the cover: ore from illegal miners was bought by private smelters and booked as PT Timah's own. A paper audit has nothing to catch.
+  - *Bangka Belitung: leaks (laundering paperwork; opened by industry schemes).* An audit reads permits and purchase records. In the Timah case the permits were the cover: ore from illegal miners was bought by private smelters and booked as PT Timah's own. A paper audit has nothing to catch. In Sayari, the trade record for Refined Bangka Tin, which exported 485 tin shipments from 2019 to 2023, carries no risk flag; the corruption flag sits on a separate, unlinked record (see Case files).
   - *Rubaya: leaks (laundering paperwork; opened by industry schemes).* Global Witness reported in 2022 and again in 2026 that tags are used to launder smuggled minerals; one smuggler said Rwandan officials bring as many tags as he needs. ITSCI rejects the claim about officials and has suspended or expelled exporters. Either way, the tag is what turns M23-taxed coltan into 'Rwandan' coltan.
 - **Official text and tools:** [RMI: smelter and refiner lists](https://www.responsiblemineralsinitiative.org/smelters-refiners-lists/) · [ITSCI](https://www.itsci.org/) · [Implementing Decision (EU) 2025/2071 (EUR-Lex)](https://eur-lex.europa.eu/eli/dec_impl/2025/2071/oj/eng)
 - **Secondary sources:** [Global Witness, The ITSCI laundromat (Apr 2022)](https://globalwitness.org/en/campaigns/transition-minerals/the-itsci-laundromat/) · [ITSCI response to Global Witness (Jun 2026)](https://www.itsci.org/2026/06/12/itsci-response-to-global-witness-report-on-rwandas-coltan/) · [European Commission on RMAP recognition (Oct 2025)](https://policy.trade.ec.europa.eu/news/first-supply-chain-due-diligence-scheme-recognised-under-conflict-minerals-regulation-facilitate-2025-10-17_en) · [Reuters via SDCExec (Nov 2016)](https://www.sdcexec.com/risk-compliance/news/12283021/for-apple-and-others-tin-supply-chain-has-ties-to-rebelheld-myanmar-mine)
@@ -352,7 +352,7 @@ US and EU sanctions freeze the assets of named people and companies and bar othe
   - *Kachin: leaks (fixed lists; opened by governments).* Since October 2024 the main mines have been held by the Kachin Independence Army, which none of the measures reviewed here list. In July 2025 the US removed four junta-linked parties from its list. No measure targets the rare earth trade itself, so the money moves without touching a listed name.
   - *Shan & Wa: leaks (third-party buyer; opened by governments).* Once a Chinese smelter buys and mixes the ore, the tin is the smelter's property, not the UWSA's, and US buyers deal only with the smelter. Sanctions experts told Reuters in 2016 that even indirect use might breach US law. The trade went on: the Wa mine resumed exports to China in 2025.
   - *Bangka Belitung: not tested.* No armed group or sanctioned party runs this trade. The harm comes from corporate crime inside a legal permit system.
-  - *Rubaya: leaks (fixed lists; opened by governments).* The US mining sanctions hit the mine's former controller, not M23, which runs it now. Sanctions follow named parties, and the coltan leaves through Rwandan exporters: Global Witness found seven companies handled almost 85% of Rwanda's coltan exports from 2023 to 2025.
+  - *Rubaya: leaks (fixed lists; opened by governments).* The US mining sanctions hit the mine's former controller, not M23, which runs it now. Sanctions follow named parties, and the coltan leaves through Rwandan exporters: Global Witness found seven companies handled almost 85% of Rwanda's coltan exports from 2023 to 2025. In Sayari's records the sanctioned East Rise listing carries no trade at all; its shipments sit under unsanctioned spellings at the same address, and one of its Rwandan suppliers was selling coltan to a Japanese trader by 2026 (see Case files).
 - **Official text and tools:** [OFAC: DRC-related sanctions](https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions) · [OFAC Sanctions List Search](https://sanctionssearch.ofac.treas.gov/) · [EU Sanctions Map](https://www.sanctionsmap.eu/)
 - **Secondary sources:** [OFAC: UWSA Kingpin Act designation (Jun 2003)](https://ofac.treasury.gov/recent-actions/20030602) · [The Star (Apr 2026)](https://www.thestar.com.my/news/world/2026/04/27/eu-extends-sanctions-against-myanmar-by-a-year) · [ThePrint (Jul 2025)](https://theprint.in/world/us-lifts-some-myanmar-sanctions-after-general-asked-trump-for-relief/2702840) · [Mining.com (Aug 2025)](https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals) · [AllAfrica / Global Witness (Apr 2025)](https://allafrica.com/stories/202504280598.html)
 
@@ -374,7 +374,7 @@ Chinese rules that license every export of seven medium and heavy rare earths, i
 - **How investigators can use it:**
   - License and traceability data are not public, so these rules hide origin from buyers while the state records it. Ask suppliers for the separator's name, its export license reference and the origin of its feed.
 - **Where it leaks:**
-  - *Kachin: leaks (state-held data; opened by governments).* The Chinese state sees Myanmar feed arrive, in customs data and in the new traceability platform, but publishes neither the license data nor the traceability records. The yttrium leaves as licensed Chinese product, and the record of where it was dug stays with the government.
+  - *Kachin: leaks (state-held data; opened by governments).* The Chinese state sees Myanmar feed arrive, in customs data and in the new traceability platform, but publishes neither the license data nor the traceability records. The yttrium leaves as licensed Chinese product, and the record of where it was dug stays with the government. Of 995 yttrium oxide shipments into the US in Sayari's records, 2 carry any origin field and none names a mine country (see Case files).
   - *Shan & Wa: leaks (state-held data; opened by governments).* As in Kachin, the state records imported feed but publishes nothing, and the product leaves as Chinese. For tin there isn't even a license: Wa concentrate enters Yunnan's smelters and leaves as Chinese metal.
   - *Bangka Belitung: not tested.* Tin isn't among China's controlled rare earths, and the route doesn't pass through China.
   - *Rubaya: not tested.* China's rare earth controls don't cover tantalum or niobium.
@@ -438,7 +438,7 @@ The laws, permits and certificates of the countries where ore is mined and the o
 |---|---|---|---|---|---|---|---|
 | OECD Minerals Due Diligence Guidance | No legal duty | The Guidance says companies should identify the separator in their chain and stop any sourcing that pays armed groups. | Global Witness traced Myanmar rare earths through Chinese processors to magnet makers supplying major brands, and named 78 companies. Most did not or would not say where their rare earths came from. Nothing obliged them to. | No legal duty | Companies | Documented: [Global Witness, Myanmar's poisoned mountains (Aug 2022)](https://globalwitness.org/en/campaigns/transition-minerals/myanmars-poisoned-mountains); [Business & Human Rights Resource Centre, summary of the 2024 Global Witness follow-up](https://www.bhrrc.org/en/latest-news/myanmar-boom-in-illegal-rare-earth-mining-linked-to-supply-chain-of-major-ev-and-wind-turbine-companies-through-china-global-witness-follow-up-investigation-reveals/) | Write the Guidance into binding law for rare earths. |
 | Industry schemes and company codes | Leaks | Brands' supplier codes, and the audits they rely on, are supposed to check where minerals came from. | In 2024 Global Witness found China's heavy rare earth quota held by two state-owned groups, one formed from companies that had disclosed buying Myanmar heavy rare earths. Brands' supplier codes stop at the magnet or tape maker, so a purchase made through these groups looks clean on paper. | Not knowing is safe | Companies | Documented: [Global Witness, Fuelling the future, poisoning the present (May 2024)](https://globalwitness.org/en/campaigns/transition-minerals/fuelling-the-future-poisoning-the-present-myanmars-rare-earth-boom); [Business & Human Rights Resource Centre, summary of the 2024 Global Witness follow-up](https://www.bhrrc.org/en/latest-news/myanmar-boom-in-illegal-rare-earth-mining-linked-to-supply-chain-of-major-ev-and-wind-turbine-companies-through-china-global-witness-follow-up-investigation-reveals/) | Require suppliers to name the separator or smelter and report its feedstock by country of mining, not only its own location. |
-| China's rare earth controls | Leaks | China licenses every export of yttrium and gadolinium. Since 2024–25 separators must also log every flow, including imported ore, in a state traceability system. | The Chinese state sees Myanmar feed arrive, in customs data and in the new traceability platform, but publishes neither the license data nor the traceability records. The yttrium leaves as licensed Chinese product, and the record of where it was dug stays with the government. | State-held data | Governments | Documented: [CNBC, citing Chinese customs data and CSIS (Jun 2025)](https://www.cnbc.com/2025/06/24/chinas-rare-earth-dominance-myanmar-plays-a-critical-role-.html); [Faegre Drinker: China's Regulations on Rare Earth Administration (Oct 2024)](https://www.faegredrinker.com/en/insights/publications/2024/10/china-issues-regulations-on-rare-earth-administration); [Global Times via GlobalSecurity: rare earth quota and traceability rules extended to imported ore (Aug 2025)](https://www.globalsecurity.org/wmd/library/news/china/2025/08/china-250822-globaltimes01.htm) | Make the separator's origin records a condition of purchase, and press for their release in trade talks. |
+| China's rare earth controls | Leaks | China licenses every export of yttrium and gadolinium. Since 2024–25 separators must also log every flow, including imported ore, in a state traceability system. | The Chinese state sees Myanmar feed arrive, in customs data and in the new traceability platform, but publishes neither the license data nor the traceability records. The yttrium leaves as licensed Chinese product, and the record of where it was dug stays with the government. Of 995 yttrium oxide shipments into the US in Sayari's records, 2 carry any origin field and none names a mine country (see Case files). | State-held data | Governments | Documented: [CNBC, citing Chinese customs data and CSIS (Jun 2025)](https://www.cnbc.com/2025/06/24/chinas-rare-earth-dominance-myanmar-plays-a-critical-role-.html); [Faegre Drinker: China's Regulations on Rare Earth Administration (Oct 2024)](https://www.faegredrinker.com/en/insights/publications/2024/10/china-issues-regulations-on-rare-earth-administration); [Global Times via GlobalSecurity: rare earth quota and traceability rules extended to imported ore (Aug 2025)](https://www.globalsecurity.org/wmd/library/news/china/2025/08/china-250822-globaltimes01.htm) | Make the separator's origin records a condition of purchase, and press for their release in trade talks. |
 
 **At: REBCO tape (fusion magnets)**
 
@@ -524,7 +524,7 @@ The laws, permits and certificates of the countries where ore is mined and the o
 |---|---|---|---|---|---|---|---|
 | EU Conflict Minerals Regulation | Leaks | EU tin importers must do enhanced due diligence if Bangka counts as a high-risk area. | The importer decides whether Bangka is high-risk, and the EU's list of such areas is only indicative. The documents an importer would check were the ones corrupted: from 2015 to 2022 illegal ore was sold into PT Timah's legal permit area through private smelters and, prosecutors said, shell companies set up for the purpose. | Laundering paperwork | Companies | Documented: [Regulation (EU) 2017/821 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2017/821/oj); [VOI: smelter officials charged; shell companies in the Timah case](https://voi.id/en/amp/411563); [Tempo: prosecutors seize five smelters in the PT Timah case (Apr 2024)](https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case) | Put areas like Bangka on a binding list, and require mine-site checks instead of permit checks. |
 | OECD Minerals Due Diligence Guidance | No legal duty | The Guidance covers tin from all high-risk areas, and the tin industry built its programs on it. | Illegal ore entered a state company's legal supply for seven years without the industry's OECD-based programs flagging it. Voluntary checks read the same paperwork the scheme corrupted. | No legal duty | Companies | Documented: [VOI: smelter officials charged; shell companies in the Timah case](https://voi.id/en/amp/411563); [OECD Minerals Due Diligence Guidance](https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-supply-chains-of-minerals-from-conflict-affected-and-high-risk-areas_9789264252479-en.html) | Write the Guidance into binding law, with mine-site verification for high-risk areas. |
-| Industry schemes and company codes | Leaks | Smelter audits check that a smelter's ore comes from legal, conflict-free sources. | An audit reads permits and purchase records. In the Timah case the permits were the cover: ore from illegal miners was bought by private smelters and booked as PT Timah's own. A paper audit has nothing to catch. | Laundering paperwork | Industry schemes | Structural: [Tempo: prosecutors seize five smelters in the PT Timah case (Apr 2024)](https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case); [VOI: smelter officials charged; shell companies in the Timah case](https://voi.id/en/amp/411563) | Add mine-site and satellite checks of where ore was dug, not only permit checks. |
+| Industry schemes and company codes | Leaks | Smelter audits check that a smelter's ore comes from legal, conflict-free sources. | An audit reads permits and purchase records. In the Timah case the permits were the cover: ore from illegal miners was bought by private smelters and booked as PT Timah's own. A paper audit has nothing to catch. In Sayari, the trade record for Refined Bangka Tin, which exported 485 tin shipments from 2019 to 2023, carries no risk flag; the corruption flag sits on a separate, unlinked record (see Case files). | Laundering paperwork | Industry schemes | Documented: [Sayari: Refined Bangka Tin trade record](https://graph.sayari.com/resource/entity/uat1s7YjsRfjrl1i1rP_mA); [Tempo: prosecutors seize five smelters in the PT Timah case (Apr 2024)](https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case); [VOI: smelter officials charged; shell companies in the Timah case](https://voi.id/en/amp/411563) | Add mine-site and satellite checks of where ore was dug, not only permit checks. |
 | Producer and transit country controls | Holds on paper | Indonesian law bans illegal mining and corruption, and courts have enforced it. | Courts convicted those behind the scheme, one with a 20-year sentence. But prosecutors let seized smelters keep operating, and in October 2025 the state handed them to PT Timah, the state company whose permits were abused. Abandoned pits keep killing people. | State capture or non-enforcement | Governments | Documented: [Jakarta Globe: Harvey Moeis begins 20-year sentence](https://jakartaglobe.id/news/mining-tycoon-harvey-moeis-begins-serving-20-years-in-prison-over-rp-300-trillion-tin-corruption-case); [Tempo: prosecutors let seized smelters resume operating (2024)](https://en.tempo.co/read/1859856/tin-corruption-ago-allows-seized-smelter-companies-to-resume-operation); [Mining.com: Indonesia hands seized tin smelters to PT Timah (Oct 2025)](https://www.mining.com/web/indonesia-hands-over-six-seized-tin-smelters-to-state-miner); [Mongabay, citing JATAM (Jun 2021)](https://news.mongabay.com/2021/06/tin-mines-close-in-on-an-indonesian-hamlet-still-clinging-to-nature) | Tie buyer contracts to independent audits of PT Timah's supply, and fund reclamation of abandoned pits. |
 
 **At: Smelting (Indonesia)**
@@ -572,7 +572,7 @@ The laws, permits and certificates of the countries where ore is mined and the o
 | Industry schemes and company codes | Leaks | ITSCI tags bags of mineral at the mine so buyers can trace them to a legal, conflict-free source. | Global Witness reported in 2022 and again in 2026 that tags are used to launder smuggled minerals; one smuggler said Rwandan officials bring as many tags as he needs. ITSCI rejects the claim about officials and has suspended or expelled exporters. Either way, the tag is what turns M23-taxed coltan into 'Rwandan' coltan. | Laundering paperwork | Industry schemes | Documented: [Global Witness, The ITSCI laundromat (Apr 2022)](https://globalwitness.org/en/campaigns/transition-minerals/the-itsci-laundromat/); [Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)](https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics); [ITSCI's response to Global Witness (Jun 2026)](https://www.itsci.org/2026/06/12/itsci-response-to-global-witness-report-on-rwandas-coltan/) | Treat tags as claims to verify, not proof, and require independent mass-balance checks of exporters. |
 | Tariff Act §307 import ban | Holds on paper | Amnesty documented forced labor at Rubaya in 2026, which is grounds for a petition and a detention order. | CBP has acted region-wide on a DRC mined product before, holding artisanal gold in 2019. For coltan, mixing in Rwanda and refining abroad make it hard to link Rubaya to specific imports. | Proof burden | Governments | Documented: [Amnesty International, 'We didn't come to play' (Sep 2026)](https://www.amnesty.org/en/documents/afr62/1454/2026/en); [Assent: CBP detention order on artisanal gold from the DRC (2019)](https://www.assent.com/blog/customs-enforcement-gold-drc/) | Issue an order covering coltan exported through Rwanda until exporters prove origin. |
 | EU Forced Labor Regulation | Not yet in force | Forced labor at Rubaya fits squarely, from December 2027. | Until then the EU has no product ban. Afterwards, mixing in Rwanda creates the same proof problem the US faces. | Proof burden | The rule's own design | Documented: [Amnesty International, 'We didn't come to play' (Sep 2026)](https://www.amnesty.org/en/documents/afr62/1454/2026/en) | Flag Rwandan coltan exports in the EU risk database so importers must prove origin. |
-| Targeted sanctions | Leaks | In 2025 the US sanctioned PARECO-FF, a mining cooperative and two Hong Kong buyers; the EU sanctioned M23 leaders, Rwandan army officers and a company. | The US mining sanctions hit the mine's former controller, not M23, which runs it now. Sanctions follow named parties, and the coltan leaves through Rwandan exporters: Global Witness found seven companies handled almost 85% of Rwanda's coltan exports from 2023 to 2025. | Fixed lists | Governments | Documented: [Mining.com: US sanctions armed group and mining firms over Congo minerals (Aug 2025)](https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals); [AllAfrica / Global Witness: EU sanctions and smuggling (Apr 2025)](https://allafrica.com/stories/202504280598.html); [Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)](https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics) | Designate exporters and refiners that handle coltan from M23-held mines. |
+| Targeted sanctions | Leaks | In 2025 the US sanctioned PARECO-FF, a mining cooperative and two Hong Kong buyers; the EU sanctioned M23 leaders, Rwandan army officers and a company. | The US mining sanctions hit the mine's former controller, not M23, which runs it now. Sanctions follow named parties, and the coltan leaves through Rwandan exporters: Global Witness found seven companies handled almost 85% of Rwanda's coltan exports from 2023 to 2025. In Sayari's records the sanctioned East Rise listing carries no trade at all; its shipments sit under unsanctioned spellings at the same address, and one of its Rwandan suppliers was selling coltan to a Japanese trader by 2026 (see Case files). | Fixed lists | Governments | Documented: [Mining.com: US sanctions armed group and mining firms over Congo minerals (Aug 2025)](https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals); [AllAfrica / Global Witness: EU sanctions and smuggling (Apr 2025)](https://allafrica.com/stories/202504280598.html); [Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)](https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics); [Sayari: East Rise trade record](https://graph.sayari.com/resource/entity/vdCIJ54CEY7kXe8uUJMsvg) | Link sanctions listings to every trade-record spelling of a designated company, and designate exporters and refiners that handle coltan from M23-held mines. |
 | Producer and transit country controls | Leaks | DRC law bans armed-group mining; Rwanda certifies its exports as Rwandan. | Congolese law doesn't operate in M23-held Rubaya. Across the border, UN experts say Rwandan authorities inflate domestic production figures to hide smuggled exports, and Global Witness found no confiscation of smuggled coltan in two years. The EU signed a raw materials partnership with Rwanda in 2024; the European Parliament called for its suspension in 2025. | State capture or non-enforcement | Governments | Documented: [Swissinfo on the UN Group of Experts report (Jul 2025)](https://www.swissinfo.ch/eng/international-geneva/un-experts-warn-congos-conflict-minerals-slipping-into-global-market/89978793); [Global Witness, Who buys Rwanda's smuggled coltan? (Jun 2026)](https://globalwitness.org/en/campaigns/transition-minerals/who-buys-rwandas-smuggled-coltan-the-global-journey-of-conflict-coltan-from-drc-to-the-worlds-electronics); [European Commission: EU–Rwanda raw materials partnership (Feb 2024)](https://ec.europa.eu/commission/presscorner/detail/en/ip_24_822); [Mongabay: European Parliament calls for suspension (Feb 2025)](https://news.mongabay.com/2025/02/eu-parliament-calls-for-end-to-rwanda-mineral-pact-over-drc-conflict-links) | Condition partnerships and market access on independent checks of Rwanda's exports against its production. |
 
 **At: Refining (UAE or China)**
@@ -592,6 +592,165 @@ The laws, permits and certificates of the countries where ore is mined and the o
 **Not tested here:**
 
 - *China's rare earth controls:* China's rare earth controls don't cover tantalum or niobium.
+
+## Case files: would any rule have caught this?
+
+Real shipments, companies and corridors from Sayari's trade and corporate data, retrieved 9 November 2026, each run through the rules it passed. A dated snapshot, not a live feed. Methods and cautions: [DATA_METHODS_SOURCES.md](DATA_METHODS_SOURCES.md), section 4.1b.
+
+### Rubaya: The sanctioned buyer that trade records never named
+
+On 12 August 2025 the US sanctioned East Rise Corporation, a Hong Kong buyer of minerals from a Rubaya-area cooperative. In Sayari's records the sanctioned listing has no trade attached. The company's shipments sit under five unsanctioned name variants at the same Hong Kong address.
+
+**What the records show**
+
+- **Mar 2023 – Feb 2025.** CDMC, the Congolese cooperative later sanctioned for selling ore from areas held by the PARECO-FF militia, ships niobium-tantalum ore (HS 261590) to Star Dragon Corporation in Hong Kong. [Star Dragon in Sayari](https://graph.sayari.com/resource/entity/EOhsW8l7khZBEzP0r4qzVQ)
+- **Jun – Nov 2023.** East Rise ships tantalite concentrate from the DRC and the UAE to Ulba Metallurgical Plant, a state-owned processor in Kazakhstan (lot codes such as DMC/NK/0000189), and niobium ingots of over 99.95% purity to TOO Minium in Kazakhstan. Niobium is the metal in fusion's low-temperature magnet wire. [East Rise trade record](https://graph.sayari.com/resource/entity/vdCIJ54CEY7kXe8uUJMsvg)
+- **Jun – 12 Aug 2025.** Rwandan exporters, including Tawotin Ltd, Rani Mining and Derick Mining, ship coltan, tin and tungsten ore to East Rise. The last arrivals are dated 12 August 2025. [Tawotin Ltd](https://graph.sayari.com/resource/entity/OPLZQzwwKb1u-D0QIVfs1w)
+- **12 Aug 2025.** The US Treasury sanctions East Rise (SDN no. 55048), Star Dragon (55049), CDMC (55047) and PARECO-FF. [Sanctioned listing in Sayari](https://graph.sayari.com/resource/entity/RXGsi4gAb93ZNWFwc4MkPA) · [Mining.com (Aug 2025)](https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals)
+- **14 Aug 2025.** Three cargoes of cassiterite (tin ore), about 75 tonnes worth $1.63 million, arrive at Port Klang for Malaysia Smelting Corporation. The shipper is 'EAST RISE CORPORATION LTD', at the address on the sanctions listing. Malaysian declarations B182025108025031, -032 and -513. [Malaysia Smelting Corporation](https://graph.sayari.com/resource/entity/pwMtR-67xAIYzs7_EWhcVQ)
+- **Jan – Jun 2026.** Tawotin keeps exporting. Its coltan, tin and tungsten now go to GM Trading, a Japanese company. One cargo of 9.8 tonnes of coltan arrived on 3 June 2026 (Tanzanian TANSAD 1370124). [GM Trading Co.](https://graph.sayari.com/resource/entity/MTmsF9fB3qY9k4ghxYeg-w)
+
+**Run through the rules**
+
+- *Targeted sanctions (stress test: leaks).* Named the company, but the trade records use other spellings and aren't linked to the listing. Malaysia Smelting is not a US person, so US sanctions don't oblige it to screen at all.
+- *Dodd-Frank §1502 (stress test: leaks).* A US company that lists a tin smelter on Form SD isn't required to check who supplied that smelter in a given month.
+- *Human Rights Due Diligence Guidelines (stress test: no legal duty).* GM Trading is in Japan, where due diligence is voluntary. Nothing requires it to ask where Tawotin's coltan came from.
+
+**Sayari flags it; no rule makes anyone check**
+
+| Party | Sayari risk flag | Legal duty to check |
+|---|---|---|
+| Malaysia Smelting Corporation | Imports from an OFAC-sanctioned entity | None. A Malaysian company is not bound by US sanctions. |
+| EAST RISE CORPORATION LTD (trade record) | Exports conflict minerals | None. The record isn't linked to the sanctions listing, so a name screen passes. |
+| Tawotin Ltd | Exports conflict minerals; child and forced labor risk | None in its own buyers' jurisdictions shown here. |
+| GM Trading Co. (Japan) | Imports conflict minerals | None. Japan's guidelines are voluntary. |
+
+**Verdict:** Sayari shows no East Rise shipments after 14 August 2025. But the trade didn't stop: one of its suppliers had a new buyer within five months, and no rule required that buyer, or the smelter that took the last cargo, to ask where the ore came from.
+
+*Limits:* Sayari links Tawotin to East Rise, not directly to Rubaya, so this case does not show that Tawotin's coltan came from Rubaya. The 14 August cargo probably left Tanzania before the designation. Each shipment was checked by its customs declaration number; the underlying documents were not opened.
+
+### Bangka Belitung: A convicted smelter's tin, with clean paperwork
+
+PT Refined Bangka Tin was one of the private smelters at the center of the PT Timah case, and its director was jailed. Indonesian export records show where its tin went while the scheme prosecutors described was running.
+
+**What the records show**
+
+- **2015 – 2022.** Prosecutors say ore from illegal miners was bought by private smelters and booked under PT Timah's legal permits, using shell companies. [Tempo (Apr 2024)](https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case)
+- **Nov 2019 – Dec 2023.** Refined Bangka Tin exports 485 shipments of refined tin (HS 800110) from Bangka. The largest buyers are Toyota Tsusho (101 shipments) and its Singapore arm (88). Others go to India, China, Korea, the US and metal warehouses in Rotterdam. [Refined Bangka Tin trade record](https://graph.sayari.com/resource/entity/uat1s7YjsRfjrl1i1rP_mA) · [Toyota Tsusho](https://graph.sayari.com/resource/entity/9nS1mjvtwYjXuvZfRe1a1A)
+- **Dec 2023.** Its last recorded exports: cargoes of about 25 tonnes, worth around $600,000 each, to Toyota Tsusho in Nagoya.
+- **Apr 2024.** Prosecutors seize the smelter. Its director is later sentenced to eight years. [Tempo (Apr 2024)](https://en.tempo.co/amp/1859157/ago-seizes-5-smelter-companies-in-pt-timah-graft-case)
+- **Oct 2025.** The state hands the seized smelters to PT Timah, the state company whose permits were abused. [Mining.com (Oct 2025)](https://www.mining.com/web/indonesia-hands-over-six-seized-tin-smelters-to-state-miner)
+
+**Run through the rules**
+
+- *Dodd-Frank §1502 (stress test: leaks).* Indonesia is not a covered country. A US filer naming this smelter had nothing more to report.
+- *EU Conflict Minerals Regulation (stress test: leaks).* Tin metal entering Rotterdam is in scope, but the importer decides whether Bangka is high-risk, and the paperwork came from a state permit.
+- *Human Rights Due Diligence Guidelines (stress test: no legal duty).* Toyota Tsusho is Japanese, where due diligence is voluntary.
+- *Industry schemes and company codes (stress test: leaks).* Sayari's trade record for the smelter carries no risk flag. The corruption flag sits on a separate record of the same company that isn't linked to its shipments.
+- *Producer and transit country controls (stress test: holds on paper).* Enforcement came after the exports: the last shipment left in December 2023, and the smelter was seized in April 2024.
+
+**Sayari flags it; no rule makes anyone check**
+
+| Party | Sayari risk flag | Legal duty to check |
+|---|---|---|
+| Refined Bangka Tin (trade record) | No flag | Nothing to prompt a check. |
+| PT. Refined Bangka Tin (risk record) | Bribery and corruption, recent | Not linked to the shipments, so screening the exporter on a bill of lading finds nothing. |
+
+**Verdict:** For four years, tin from a smelter later convicted over illegal ore moved to major buyers with clean paperwork. No rule required those buyers to look past the export permit.
+
+*Limits:* These records don't show which shipments, if any, contained illegal ore. The court case covers 2015 to 2022; Sayari's Indonesian export data starts in 2019.
+
+### Shan & Wa: The trade that isn't in the data
+
+Wa State's Man Maw mine has been estimated at 7 to 8% of world tin concentrate supply, almost all of it sold to smelters in Yunnan. In the commercial trade data buyers and investigators rely on, that flow is close to invisible.
+
+**What the records show**
+
+- **Trade data.** Sayari holds 2,160 records of tin ore entering China. The leading departure countries are Brazil, Australia, Rwanda, Russia and Malaysia. Myanmar does not appear.
+- **Sources.** Sayari holds no Myanmar customs data at all, only company registry records.
+- **Exports.** A search for tin ore leaving Myanmar finds two records ever, both to Malaysia or Vietnam.
+
+**Run through the rules**
+
+- *Dodd-Frank §1502 (stress test: leaks).* A US filer whose smelter buys Wa tin sees only the smelter, and Myanmar isn't on the country list.
+- *Targeted sanctions (stress test: leaks).* The UWSA has been on the US sanctions list since 2003, but no shipment record names it, so there is nothing for a screen to catch.
+- *China's rare earth controls (stress test: leaks).* China's customs records this trade, but publishes no shipment-level data.
+
+**Verdict:** No rule required anyone to ask, and the data buyers and investigators use can't answer. This is a data void, not evidence that the trade is clean.
+
+*Limits:* Absence in Sayari reflects missing sources, with no shipment-level customs data from Myanmar or for China's imports from it, not an absence of trade. The 7 to 8% figure is an industry estimate reported by Shanghai Metals Market.
+
+### Kachin: Yttrium oxide with no past
+
+Kachin supplies a large share of the world's heavy rare earths, including yttrium, which are separated in southern China. By the time yttrium oxide reaches a buyer, the record no longer says where the ore was dug.
+
+**What the records show**
+
+- **Into China.** Sayari holds 795 records of rare earth compounds (HS 2846) entering China. Departure countries include the US, Malaysia, Russia, Vietnam and India. Myanmar does not appear.
+- **Into the US.** It holds 995 records described as yttrium oxide arriving in the US. Only 2 carry any product-origin field, and none names the country where the ore was mined.
+- **Suppliers.** Among the larger suppliers of yttrium oxide to the US in these records is Qiandong Rare Earth Group of Ganzhou, Jiangxi, a center of heavy rare earth separation. Its records show where it shipped from, not what ore it processed. [Qiandong Rare Earth Group](https://graph.sayari.com/resource/entity/t-4HuZtPd2C0pL8drA9Lxw)
+
+**Run through the rules**
+
+- *Dodd-Frank §1502 (stress test: not tested).* Rare earths aren't covered, so no filer has to ask.
+- *China's rare earth controls (stress test: leaks).* China licenses the export and logs imported ore in a state system, but neither record travels with the shipment.
+- *Tariff Act §307 import ban (stress test: leaks).* Pollution and armed-group revenue are not forced labor, so the ban has nothing to act on.
+
+**Verdict:** No rule required anyone to ask, and by the time the yttrium reaches a buyer there is no record to ask with.
+
+*Limits:* This case doesn't show that any named supplier processed Myanmar ore. It shows that the records reaching buyers can't say either way.
+
+### Corridors: what the data can and can't see
+
+**Tin ore entering China, by departure country.** Myanmar, historically China's largest tin ore supplier, has no records.
+
+| Country | records |
+|---|---|
+| Brazil | 509 |
+| Australia | 309 |
+| Rwanda | 200 |
+| Russia | 119 |
+| Malaysia | 116 |
+| Kenya | 90 |
+| Venezuela | 79 |
+| Tanzania | 67 |
+| Myanmar | 0 |
+
+HS 2609. Among records that name a product origin, the DRC leads with 236.
+
+**Rare earth compounds entering China, by departure country.** Myanmar has no records, though Chinese customs counts it as a leading source.
+
+| Country | records |
+|---|---|
+| United States | 277 |
+| Malaysia | 197 |
+| Russia | 114 |
+| Vietnam | 97 |
+| India | 52 |
+| South Korea | 17 |
+| Myanmar | 0 |
+
+HS 2846, 795 records in total.
+
+**East Rise's trade, by Sayari record.** The sanctioned listing carries none of the company's trade.
+
+| Record | trade records |
+|---|---|
+| SDN listing | 0 |
+| …CORPORATION LTD | 133 |
+| E.R.C LTD ×2 | 16 |
+| …CORPOLATION… | 4 |
+| …COPROPRATION… | 1 |
+
+Rows: the sanctioned listing (SDN 55048); EAST RISE CORPORATION LTD; two records named E.R.C LTD, likely the same firm; EAST RISE , CORPOLATION , LTD; EAST RISE COPROPRATION LTD. Counts are shipments sent plus received on each record. The main record shares the sanctioned company's Hong Kong address; the others are spellings in Tanzanian and Rwandan export records.
+
+### The fusion link: can tape and wire makers be traced to the mines?
+
+- **[Faraday Factory Japan](https://graph.sayari.com/resource/entity/C13ZLDlfTD93f5CM_BpokA)** (REBCO tape for compact fusion magnets). The upstream trail in Sayari ends at its equipment and tape partners. No mineral supplier appears.
+- **[Shanghai Superconductor Technology](https://graph.sayari.com/resource/entity/-NNFlJQpxCMOLmMbA66_TQ)** (REBCO tape). No upstream trade records.
+- **[Western Superconducting Technologies](https://graph.sayari.com/resource/entity/sHd3C6y1EF_j7cxUmp8p4w)** (NbTi and Nb₃Sn wire, a supplier to ITER). No upstream trade records. It shares an investor, CITIC Securities, with Ningxia Orient Tantalum, which bought from East Rise, but a shareholder link is not a supply link.
+
+None reaches a mineral source. The last link can only be closed by suppliers disclosing it.
 
 ---
 

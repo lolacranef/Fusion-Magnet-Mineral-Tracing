@@ -69,7 +69,7 @@ Every failed test records how the abuse gets through, in one or two sentences na
 | The rule's own design | Scope, lists and thresholds written into the rule | 16 | 7 |
 | Governments | Officials who issue cover, keep data secret, or don't enforce | 18 | 11 |
 | Companies | Buyers and suppliers that don't ask, or accept paper | 6 | 6 |
-| Industry schemes | Audits and tags accepted as proof | 4 | 3 |
+| Industry schemes | Audits and tags accepted as proof | 4 | 4 |
 | Armed groups | Groups that run the mines and decide what leaves | 1 | 1 |
 
 ### 2.7 Checking rule terms and facts
@@ -123,6 +123,14 @@ Scopes, thresholds and dates were checked against the cited sources on 9 Novembe
 | China's rare earth controls (China) | [IEA: Regulations on the Management of Rare Earths](https://www.iea.org/policies/25387-regulations-on-the-management-of-rare-earths)<br>[IEA summary of Announcement No. 18](https://www.iea.org/policies/26796-export-controls-on-certain-medium-and-heavy-rare-earth-items)<br>[CSET translation of Announcement No. 61](https://cset.georgetown.edu/publication/mofcom-notice-2025-61)<br>[Pillsbury: the November 2025 suspension](https://www.pillsburylaw.com/en/news-and-insights/china-suspends-export-controls-certain-critical-minerals-related-items.html) | [Holland & Knight on Announcement No. 18 (Apr 2025)](https://www.hklaw.com/en/insights/publications/2025/04/china-imposes-export-controls-on-medium-and-heavy-rare-earth-materials)<br>[Pillsbury on the November 2025 suspension](https://www.pillsburylaw.com/en/news-and-insights/china-suspends-export-controls-certain-critical-minerals-related-items.html)<br>[Faegre Drinker on the October 2024 regulations](https://www.faegredrinker.com/en/insights/publications/2024/10/china-issues-regulations-on-rare-earth-administration)<br>[Global Times via GlobalSecurity on imported ore (Aug 2025)](https://www.globalsecurity.org/wmd/library/news/china/2025/08/china-250822-globaltimes01.htm) |
 | Producer and transit country controls (Local) | [EITI: Myanmar](https://eiti.org/countries/myanmar)<br>[EITI: Indonesia](https://eiti.org/countries/indonesia)<br>[EITI: DR Congo](https://eiti.org/countries/democratic-republic-congo)<br>[UN Comtrade](https://comtradeplus.un.org/) | [Mongabay on Global Witness](https://news.mongabay.com/2022/08/toxic-rare-earth-mines-fuel-deforestation-rights-abuses-in-myanmar-report-says/)<br>[The Irrawaddy on Wa tin](https://www.irrawaddy.com/?p=127037)<br>[VOI (Jul 2025)](https://voi.id/en/amp/491796)<br>[Antara (Sep 2025)](https://en.antaranews.com/news/383205/govt-calls-for-shutdown-of-1000-illegal-tin-mines-in-bangka-belitung)<br>[Reuters via Monitor](https://www.monitor.co.ug/uganda/news/inside-the-mine-that-feeds-the-tech-world-and-funds-congo-s-rebels-5154474)<br>[Swissinfo on the UN Group of Experts (Jul 2025)](https://www.swissinfo.ch/eng/international-geneva/un-experts-warn-congos-conflict-minerals-slipping-into-global-market/89978793)<br>[Mining.com: seized smelters handed to PT Timah (Oct 2025)](https://www.mining.com/web/indonesia-hands-over-six-seized-tin-smelters-to-state-miner) |
 
+### 4.1b Case files: trade data from Sayari
+
+The case files use Sayari's trade and corporate data, retrieved on 9 November 2026: a dated snapshot, not a live query. Three cautions shaped how it was used.
+
+- **Filters were checked, not trusted.** Some search filters (shipper name, receiver name and date) did not apply reliably. Every shipment cited was confirmed by its own record: customs declaration or transaction numbers, dates, weights and addresses.
+- **One company, many records.** Trade records often appear under spelling variants not linked to a company's sanctions or risk listing. Variants were matched on address and trade partners; the case files say where a match is only likely.
+- **Absence is not innocence.** Sayari holds no Myanmar customs data and no shipment-level records of China's imports from Myanmar. Missing corridors are reported as data voids.
+
 ### 4.1a Stress test evidence
 
 **Kachin**
@@ -173,6 +181,7 @@ Scopes, thresholds and dates were checked against the cited sources on 9 Novembe
 - [BAFA: LkSG overview](https://www.bafa.de/EN/Supply_Chain_Act/Overview/overview_node.html): German LkSG
 - [OECD Minerals Due Diligence Guidance](https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-supply-chains-of-minerals-from-conflict-affected-and-high-risk-areas_9789264252479-en.html): OECD Guidance
 - [METI guidelines (provisional English translation)](https://www.meti.go.jp/policy/economy/business-jinken/guidelines/provisionalenglishtranslation.pdf): Japan guidelines
+- [Sayari: Refined Bangka Tin trade record](https://graph.sayari.com/resource/entity/uat1s7YjsRfjrl1i1rP_mA): Industry schemes
 - [ILO, child labour survey in Bangka Belitung tin mining (Dec 2015)](https://www.ilo.org/publications/sectoral-survey-child-labour-informal-tin-mining-kepulauan-bangka-belitung): US §307 ban, EU Forced Labor ban
 - [Jakarta Globe: Harvey Moeis begins 20-year sentence](https://jakartaglobe.id/news/mining-tycoon-harvey-moeis-begins-serving-20-years-in-prison-over-rp-300-trillion-tin-corruption-case): Producer & transit states
 - [Tempo: prosecutors let seized smelters resume operating (2024)](https://en.tempo.co/read/1859856/tin-corruption-ago-allows-seized-smelter-companies-to-resume-operation): Producer & transit states
@@ -196,6 +205,7 @@ Scopes, thresholds and dates were checked against the cited sources on 9 Novembe
 - [DHS: UFLPA Entity List](https://www.dhs.gov/uflpa-entity-list): US UFLPA
 - [Mining.com: US sanctions armed group and mining firms over Congo minerals (Aug 2025)](https://www.mining.com/web/us-sanctions-armed-group-mining-firms-over-illicit-congo-minerals): Sanctions
 - [AllAfrica / Global Witness: EU sanctions and smuggling (Apr 2025)](https://allafrica.com/stories/202504280598.html): Sanctions
+- [Sayari: East Rise trade record](https://graph.sayari.com/resource/entity/vdCIJ54CEY7kXe8uUJMsvg): Sanctions
 - [European Commission: EU–Rwanda raw materials partnership (Feb 2024)](https://ec.europa.eu/commission/presscorner/detail/en/ip_24_822): Producer & transit states
 - [Mongabay: European Parliament calls for suspension (Feb 2025)](https://news.mongabay.com/2025/02/eu-parliament-calls-for-end-to-rwanda-mineral-pact-over-drc-conflict-links): Producer & transit states
 
@@ -321,6 +331,20 @@ Each recommendation names the leak it has to survive. The facts are sourced; the
 - SPARC's 12.2-tesla field and REBCO's operating temperature of about 20 K come from general knowledge.
 - The EU list of conflict-affected areas is cited from a 2020 source; confirm it is still maintained.
 - Companies marked "Example" on the supply map come from general industry knowledge.
+
+### Evidence limits
+
+- Some of the strongest documented cases are dated: the Reuters investigation tracing Wa tin through Yunnan Tin is from 2016. The structure it showed (mixing, certificates accepted as proof, Myanmar outside fixed lists) is unchanged, but current smelter sourcing should be re-checked.
+- Global Witness's 2026 findings on ITSCI tags in Rwanda are disputed by ITSCI. Both are cited.
+- Whether specific smelters in the PT Timah case held RMAP status, and whether any Chinese separator processing Myanmar ore is on the UFLPA Entity List, could not be confirmed. The tests that depend on this are marked structural.
+- CBP's public list of detention orders could not be searched as text, so this research does not claim that no order covers these minerals.
+
+### Evidence limits
+
+- Some of the strongest documented cases are dated: the Reuters investigation tracing Wa tin through Yunnan Tin is from 2016. The structure it showed (mixing, certificates accepted as proof, Myanmar outside fixed lists) is unchanged, but current smelter sourcing should be re-checked.
+- Global Witness's 2026 findings on ITSCI tags in Rwanda are disputed by ITSCI. Both are cited.
+- Whether specific smelters in the PT Timah case held RMAP status, and whether any Chinese separator processing Myanmar ore is on the UFLPA Entity List, could not be confirmed. The tests that depend on this are marked structural.
+- CBP's public list of detention orders could not be searched as text, so this research does not claim that no order covers these minerals.
 
 ### Evidence limits
 
